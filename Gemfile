@@ -32,6 +32,18 @@ gem "redis", ">= 4.0.1"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
+#try later new rails gems
+# ----------------------------------------------------------------
+#
+# Solid Cache is a database-backed Active Support cache store implementation.
+# gem "solid_cache"
+
+# Solid Queue is a DB-based queuing backend for Active Job,
+# gem "solid_queue"
+
+# ----------------------------------------------------------------
+
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 

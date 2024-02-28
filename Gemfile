@@ -34,12 +34,15 @@ gem "redis", ">= 4.0.1"
 
 #try later new rails gems
 # ----------------------------------------------------------------
-#
+
 # Solid Cache is a database-backed Active Support cache store implementation.
 # gem "solid_cache"
 
 # Solid Queue is a DB-based queuing backend for Active Job,
 # gem "solid_queue"
+
+# This gem provides a Rails-based frontend to Active Job adapters
+# gem "mission_control-jobs"
 
 # ----------------------------------------------------------------
 

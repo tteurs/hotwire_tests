@@ -1,0 +1,16 @@
+<div id="container">
+  <%= turbo_stream_from "quotes_broadcaster" %>
+
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+  <div>
+    <h1>
+      Quotes
+    </h1>
+    <%= turbo_frame_tag "quotes" do %>
+      <%= render @quotes %>
+     <% end %>
+  </div>
+</div>

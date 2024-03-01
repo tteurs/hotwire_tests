@@ -1,0 +1,14 @@
+<%= turbo_frame_tag quote do %>
+  <div class="quote" id="<%= dom_id quote %>" data-controller="quote">
+    <blockquote>
+      <p data-quote-target='name' data-action="click->quote#getQuoteName"><%= "#{quote.name} <- click here for stimulus test" %></p>
+      <p>
+        <%= link_to quote.name, quote, data: {turbo_frame: "_top"} %>
+      </p>
+      <div class="buttons"  >
+        <%= button_to "Edit", edit_quote_path(quote), method: :get %>
+        <%= button_to "Delete", quote_path(quote), data: {turbo_frame: "_top", turbo_confirm: "Are you sure?"}, method: :delete %>
+      </div>
+    </blockquote>
+  </div>
+<% end %>

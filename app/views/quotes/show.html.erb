@@ -1,0 +1,7 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @quote %>
+
+<div>
+  <%= button_to sanitize("&larr; Close"), quotes_path, method: :get %>
+</div>

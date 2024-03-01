@@ -1,8 +1,7 @@
 <%= turbo_frame_tag quote do %>
   <div class="quote" id="<%= dom_id quote %>" data-controller="quote">
     <blockquote>
-      <p data-quote-target='name' data-action="click->quote#getQuoteName"><%= "#{quote.name} <- click here for stimulus test" %></p>
-      <p>
+        <p class="tooltip" tip="click here for stimulus test" data-quote-target='name' data-action="click->quote#getQuoteName"><%= "#{quote.name}"%></p>
         <%= link_to quote.name, quote, data: {turbo_frame: "_top"} %>
       </p>
       <div class="buttons"  >

@@ -10,6 +10,7 @@ export default class extends Controller {
   getQuoteName = () => {
     const element = this.nameTarget
     const name = element.textContent
-    alert(`you clicked the quote: ${name}`)
+    navigator.clipboard.writeText(name)
+    alert(`you clicked the quote: ${name} and it are now on your clipboard`)
   }
 }
